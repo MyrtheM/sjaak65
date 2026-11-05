@@ -219,54 +219,55 @@ h2, h3, h4, p { overflow-wrap: anywhere; }
 }
 @media (max-width: 680px) {
   html { scroll-padding-top: 102px; }
-  body { font-size: 14px; }
+  body { font-size: 15px; line-height: 1.7; }
   .hero { min-height: 700px; min-height: min(760px, 94svh); }
   .hero-photo { background-position: 58% center; }
   .hero-shade { background: linear-gradient(90deg, rgba(20,35,29,.77), rgba(20,35,29,.38)), linear-gradient(0deg, rgba(20,35,29,.65), transparent 35%); }
   .hero-topline { padding: 17px 19px; }
-  .wordmark { font-size: 9px; letter-spacing: 1px; }
-  .print-button { min-height: 36px; padding: 5px 8px; font-size: 10px; }
+  .wordmark { font-size: 10px; letter-spacing: 1px; }
+  .print-button { min-height: 44px; padding: 7px 10px; font-size: 12px; }
   .hero-copy { width: calc(100% - 44px); margin: auto 22px; padding: 20px 0 55px; }
-  .hero h1 { font-size: clamp(49px, 12vw, 67px); }
-  .hero-intro { max-width: 360px; font-size: 14px; }
-  .hero-stamp { top: 24%; right: 23px; width: 81px; height: 81px; font-size: 12px; }
-  .hero-stamp strong { font-size: 31px; }
-  .hero-stamp span { font-size: 7px; }
-  .hero-meta { gap: 7px 15px; padding: 13px 19px; font-size: 10px; }
+  .hero h1 { font-size: clamp(38px, 11vw, 52px); }
+  .hero-intro { max-width: 360px; font-size: 15px; }
+  .today-status { max-width: 100%; font-size: 14px; line-height: 1.55; }
+  .hero-stamp { top: 92px; right: 23px; width: 66px; height: 66px; font-size: 10px; }
+  .hero-stamp strong { font-size: 24px; }
+  .hero-stamp span { font-size: 6px; }
+  .hero-meta { gap: 8px 15px; padding: 13px 19px; font-size: 11px; }
   .site-nav { min-height: 90px; flex-wrap: wrap; gap: 0; padding: 8px 17px 0; }
   .nav-brand, .nav-birthday { height: 34px; display: inline-flex; align-items: center; }
   .nav-links { order: 2; width: 100%; height: 42px; justify-content: flex-start; gap: 0; overflow-x: auto; scrollbar-width: none; }
   .nav-links::-webkit-scrollbar { display: none; }
-  .nav-links a { flex: 0 0 auto; padding: 0 13px 0 0; margin-right: 13px; font-size: 11px; }
+  .nav-links a { flex: 0 0 auto; min-height: 42px; padding: 0 13px 0 0; margin-right: 13px; font-size: 12px; }
   .section-wrap { width: calc(100% - 36px); }
   .welcome { padding-block: 48px; }
   .welcome-mark { font-size: 31px; }
   .welcome h2, .section-heading h2, .spontaneous h2 { font-size: 31px; }
-  .welcome-copy { font-size: 13px; }
+  .welcome-copy { font-size: 14px; }
   .base-band { grid-template-columns: 1fr; }
   .base-image { min-height: 260px; }
   .base-copy { padding: 36px 26px 43px; }
   .base-copy h2 { font-size: 45px; }
   .days-section { padding-block: 59px 60px; }
   .section-heading { align-items: start; flex-direction: column; gap: 11px; margin-bottom: 25px; }
-  .section-heading > p { max-width: 440px; }
-  .day-tabs { gap: 6px; }
-  .day-tab { width: 62px; height: 68px; }
+  .section-heading > p { max-width: 440px; font-size: 14px; }
+  .day-tabs { gap: 5px; }
+  .day-tab { width: auto; min-width: 0; height: 72px; flex: 1 1 0; }
   .day-panel { min-height: auto; padding: 21px 17px; }
   .day-title { align-items: start; flex-direction: column; gap: 16px; }
   .day-title h3 { font-size: 37px; }
   .weather { min-width: 0; grid-template-columns: 36px auto 1fr; column-gap: 9px; padding: 0; border: 0; }
   .weather-icon { grid-row: auto; font-size: 25px; }
-  .weather-temp { font-size: 13px; }
-  .weather-copy { font-size: 10px; }
-  .day-lede { font-size: 13px; }
+  .weather-temp { font-size: 14px; }
+  .weather-copy { font-size: 12px; }
+  .day-lede { font-size: 14px; }
   .time-item { grid-template-columns: 1fr; gap: 1px; padding: 14px 0; }
-  .time-label { font-size: 10px; }
+  .time-label { font-size: 12px; }
   .time-item h4 { font-size: 18px; }
-  .time-item p { font-size: 12px; }
+  .time-item p { font-size: 14px; line-height: 1.65; }
   .birthday-banner { min-height: 220px; align-items: start; flex-direction: column; justify-content: center; padding: 27px 19px; }
   .birthday-banner h3 { font-size: 39px; }
-  .birthday-banner .eyebrow { max-width: 245px; font-size: 9px; }
+  .birthday-banner .eyebrow { max-width: 245px; font-size: 11px; }
   .birthday-number { top: 26px; right: 6px; font-size: 100px; transform: none; }
   .surprise-button { padding: 8px 10px; }
   .birthday-content { padding: 24px 17px; }
@@ -276,30 +277,36 @@ h2, h3, h4, p { overflow-wrap: anywhere; }
   .food-section { padding-block: 57px 58px; }
   .food-heading { margin-bottom: 22px; }
   .food-filters { flex-wrap: nowrap; overflow-x: auto; padding-bottom: 5px; scrollbar-width: thin; }
-  .filter-chip { flex: 0 0 auto; }
+  .filter-chip { min-height: 42px; flex: 0 0 auto; font-size: 12px; }
   .restaurant-grid { grid-template-columns: 1fr; }
   .restaurant-card { min-height: 253px; }
   .restaurant-card > p:not(.restaurant-tag) { min-height: auto; }
+  .restaurant-card > p:not(.restaurant-tag) { font-size: 14px; line-height: 1.6; }
+  .restaurant-card > p.restaurant-address { font-size: 12px; }
+  .restaurant-meta { font-size: 11px; }
+  .favorite-button { width: 44px; height: 44px; }
   .explore { padding-block: 56px; }
   .explore-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 7px; }
   .explore-card { min-height: 85px; padding: 12px; }
-  .explore-card > span:nth-child(2) { font-size: 11px; }
+  .explore-card > span:nth-child(2) { font-size: 12px; }
   .map-section { padding-block: 56px 39px; }
   .map-layout { grid-template-columns: 1fr; gap: 12px; }
   .map-home { min-height: 273px; padding: 27px; }
   .map-places { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .map-card { padding: 12px 10px; }
-  .map-card h3 { font-size: 15px; }
+  .map-card h3 { font-size: 16px; }
+  .map-card p, .map-card a { font-size: 12px; }
+  .weather-disclaimer, .food-note { font-size: 12px; }
   .closing { min-height: 320px; }
   .closing h2 { font-size: 42px; }
   .site-footer { flex-wrap: wrap; justify-content: center; padding-block: 15px; text-align: center; }
   .site-footer span:first-child { width: 100%; }
 }
 @media (max-width: 360px) {
-  .hero-topline { align-items: start; }
-  .print-button { font-size: 9px; }
-  .hero-stamp { top: 21%; right: 16px; }
-  .hero-meta { font-size: 9px; }
+  .hero-topline { align-items: start; flex-direction: column; gap: 10px; }
+  .hero-copy { padding-top: 10px; }
+  .hero-stamp { top: 76px; right: 16px; }
+  .hero-meta { font-size: 10px; }
   .map-places { grid-template-columns: 1fr; }
 }
 @media (prefers-reduced-motion: reduce) {
